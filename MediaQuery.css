@@ -1,0 +1,39 @@
+@media screen and (min-width: 1240px) {
+
+    body{
+        height: 100vh;
+        margin: 0;
+    }
+
+    main{
+        grid-template-areas:
+        "cabeca cabeca"
+        "conteudo sobre"
+        ;
+        grid-template-columns: 1fr 1fr;
+        width: 50vw;
+    }
+
+    header,section,aside{
+        padding: 45px;
+    }
+
+    section > div#prec{
+        padding: 10px 0;
+    }
+
+    section > div#prec > span{
+        font-size: 2.3em;
+    }
+    
+    aside > h1{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    aside > p{
+        font-size: 0.9em;
+        width: 65%;
+        line-height: 25px;
+    }
+}

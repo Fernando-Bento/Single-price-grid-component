@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body{
+    background-color: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0;
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+    "cabeca"
+    "conteudo"
+    "sobre"
+    ;
+    justify-content: center;
+    background-color: white;
+    width: 80vw;
+    border-radius: 2%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.100);
+}
+
+header,section,aside{
+    padding: 30px 35px;
+}
+
+section,aside{
+    color: white;
+}
+
+header{
+    grid-area: cabeca;
+}
+
+header > h1{
+    font-size: 1.6em;
+    color: var(--Cyan);
+    padding-bottom: 25px;
+}
+
+header > h2{
+    font-size: 1.2em;
+    color: var(--Bright-Yellow);
+    padding-bottom: 25px;
+}
+
+header > p{
+    font-size: 1.1em;
+    color: var(--Grayish-Blue);
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+
+
+section{
+    grid-area: conteudo;
+    background-color: var(--Cyan);
+}
+
+section > h1{
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+section > div#prec{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+section > div#prec > span{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+section > div#prec > p{
+    padding-left: 10px;
+    color: var(--Light-Gray);
+}
+
+section > p{
+    font-size: 1.2em;
+}
+
+section > button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    color: white;
+    background-color: var(--Bright-Yellow);
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+section > button:hover{
+    background-color: hsl(106, 73%, 54%);
+    transform: scale(1.1);
+}
+
+aside{
+    grid-area: sobre;
+    background-color: hsl(179, 76%, 43%);
+}
+
+aside > h1{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+aside > p{
+    font-size: 1.1em;
+    width: 65%;
+    line-height: 25px;
+}
